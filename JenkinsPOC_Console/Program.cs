@@ -11,7 +11,24 @@ namespace JenkinsPOC_Console
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Console.WriteLine("First Checkin");
+            Console.WriteLine("First Check-in");
+        }
+    }
+
+    public class Worker
+    {
+        public bool IsPalindrome(string input)
+        {
+            if (string.IsNullOrWhiteSpace(input))
+                return false;
+
+            string reversed = "";
+            for (int i = input.Length - 1; i >= 0; i--)
+            {
+                reversed += input[i];
+            }
+
+            return input.Equals(reversed);
         }
     }
 }
