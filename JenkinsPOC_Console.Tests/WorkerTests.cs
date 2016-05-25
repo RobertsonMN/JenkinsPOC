@@ -26,5 +26,13 @@ namespace JenkinsPOC_Console.Tests
             var worker = new Worker();
             Assert.IsFalse(worker.IsPalindrome("jupiter"));
         }
+
+
+        [TestMethod]
+        public void IsPalindrome_Trim()
+        {
+            var worker = new Worker();
+            Assert.IsTrue(worker.IsPalindrome("mom     "));
+        }
     }
 }

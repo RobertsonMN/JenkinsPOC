@@ -23,6 +23,7 @@ namespace JenkinsPOC_Console
                 return false;
 
             string reversed = "";
+            input = input.Trim();
             for (int i = input.Length - 1; i >= 0; i--)
             {
                 reversed += input[i];
