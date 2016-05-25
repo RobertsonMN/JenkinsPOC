@@ -32,7 +32,8 @@ namespace JenkinsPOC_Console.Tests
         public void IsPalindrome_Trim()
         {
             var worker = new Worker();
-            Assert.IsTrue(worker.IsPalindrome("mom     "));
+            Assert.IsFalse(worker.IsPalindrome("mom     "));
+
         }
     }
 }
