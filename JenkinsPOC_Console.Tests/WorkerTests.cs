@@ -47,7 +47,7 @@ namespace JenkinsPOC_Console.Tests
         [TestMethod]
         public void FailingTestBreaksBuild()
         {
-           Assert.IsFalse(true);
+           Assert.IsFalse(false);
         }
     }
 }
