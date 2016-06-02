@@ -43,5 +43,11 @@ namespace JenkinsPOC_Console.Tests
             Assert.IsTrue(worker.IsPalindrome("      dad     "));
 
         }
+
+        [TestMethod]
+        public void FailingTestBreaksBuild()
+        {
+           Assert.IsFalse(true);
+        }
     }
 }
